@@ -80,26 +80,10 @@ class Net(nn.Module):
         return s
 
 
-def loss_fn(outputs, labels):
+
+def loss_fn_kd(logits, labels, teacher_logits, params):
     """
-    Compute the cross entropy loss given outputs and labels.
-
-    Args:
-        outputs: (Variable) dimension batch_size x 6 - output of the model
-        labels: (Variable) dimension batch_size, where each element is a value in [0, 1, 2, 3, 4, 5]
-
-    Returns:
-        loss (Variable): cross entropy loss for all images in the batch
-
-    Note: you may use a standard loss function from http://pytorch.org/docs/master/nn.html#loss-functions. This example
-          demonstrates how you can easily define a custom loss function.
-    """
-    return nn.CrossEntropyLoss()(outputs, labels)
-
-
-def loss_fn_kd(outputs, labels, teacher_outputs, params):
-    """
-    Compute the knowledge-distillation (KD) loss given outputs, labels.
+    Compute the knowledge-distillation (KD) loss given logits, labels.
     "Hyperparameters": temperature and alpha
 
     NOTE: the KL Divergence for PyTorch comparing the softmaxs of teacher
@@ -107,9 +91,9 @@ def loss_fn_kd(outputs, labels, teacher_outputs, params):
     """
     alpha = params.alpha
     T = params.temperature
-    KD_loss = nn.KLDivLoss()(F.log_softmax(outputs/T, dim=1),
-                             F.softmax(teacher_outputs/T, dim=1)) * (alpha * T * T) + \
-              F.cross_entropy(outputs, labels) * (1. - alpha)
+    KD_loss = nn.KLDivLoss()(F.log_softmax(logits/T, dim=1),
+                             F.softmax(teacher_logits/T, dim=1)) * (alpha * T * T) + \
+              F.cross_entropy(logits, labels) * (1. - alpha)
 
     return KD_loss
 

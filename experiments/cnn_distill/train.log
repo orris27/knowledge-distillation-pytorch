@@ -236,3 +236,241 @@
 2018-03-10 07:22:46,567:INFO: Epoch 30/30
 2018-03-10 07:23:44,333:INFO: - Train metrics: accuracy: 0.830 ; loss: 0.445
 2018-03-10 07:23:45,156:INFO: - Eval metrics : accuracy: 0.838 ; loss: 0.000
+2020-01-02 17:43:00,099:INFO: Loading the datasets...
+2020-01-02 17:43:02,125:INFO: - done.
+2020-01-02 17:43:27,005:INFO: Loading the datasets...
+2020-01-02 17:43:29,025:INFO: - done.
+2020-01-02 17:43:31,458:INFO: Experiment - model version: cnn_distill
+2020-01-02 17:43:31,458:INFO: Starting training for 30 epoch(s)
+2020-01-02 17:43:31,458:INFO: First, loading the teacher model and computing its outputs...
+2020-01-02 17:43:45,378:INFO: - Finished computing teacher outputs after 14 secs..
+2020-01-02 17:43:45,379:INFO: Epoch 1/30
+2020-01-02 17:44:24,105:INFO: Loading the datasets...
+2020-01-02 17:44:26,125:INFO: - done.
+2020-01-02 17:44:28,535:INFO: Experiment - model version: cnn_distill
+2020-01-02 17:44:28,535:INFO: Starting training for 30 epoch(s)
+2020-01-02 17:44:28,535:INFO: First, loading the teacher model and computing its outputs...
+2020-01-02 17:44:42,432:INFO: - Finished computing teacher outputs after 14 secs..
+2020-01-02 17:44:42,432:INFO: Epoch 1/30
+2020-01-02 17:44:46,245:INFO: - Train metrics: loss: 0.199 ; accuracy: 0.400
+2020-01-02 17:44:46,757:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.626
+2020-01-02 17:44:46,766:INFO: - Found new best accuracy
+2020-01-02 17:44:46,767:INFO: Epoch 2/30
+2020-01-02 17:44:50,583:INFO: - Train metrics: loss: 0.166 ; accuracy: 0.607
+2020-01-02 17:44:51,093:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.686
+2020-01-02 17:44:51,103:INFO: - Found new best accuracy
+2020-01-02 17:44:51,104:INFO: Epoch 3/30
+2020-01-02 17:44:54,932:INFO: - Train metrics: loss: 0.159 ; accuracy: 0.645
+2020-01-02 17:44:55,435:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.694
+2020-01-02 17:44:55,446:INFO: - Found new best accuracy
+2020-01-02 17:44:55,446:INFO: Epoch 4/30
+2020-01-02 17:44:59,281:INFO: - Train metrics: loss: 0.156 ; accuracy: 0.639
+2020-01-02 17:44:59,809:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.746
+2020-01-02 17:44:59,819:INFO: - Found new best accuracy
+2020-01-02 17:44:59,819:INFO: Epoch 5/30
+2020-01-02 17:45:03,648:INFO: - Train metrics: loss: 0.147 ; accuracy: 0.695
+2020-01-02 17:45:04,148:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.753
+2020-01-02 17:45:04,158:INFO: - Found new best accuracy
+2020-01-02 17:45:04,159:INFO: Epoch 6/30
+2020-01-02 17:45:08,056:INFO: - Train metrics: loss: 0.142 ; accuracy: 0.730
+2020-01-02 17:45:08,543:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.761
+2020-01-02 17:45:08,554:INFO: - Found new best accuracy
+2020-01-02 17:45:08,554:INFO: Epoch 7/30
+2020-01-02 17:45:12,416:INFO: - Train metrics: loss: 0.141 ; accuracy: 0.750
+2020-01-02 17:45:12,924:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.778
+2020-01-02 17:45:12,934:INFO: - Found new best accuracy
+2020-01-02 17:45:12,935:INFO: Epoch 8/30
+2020-01-02 17:45:16,852:INFO: - Train metrics: loss: 0.146 ; accuracy: 0.713
+2020-01-02 17:45:17,337:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.775
+2020-01-02 17:45:17,342:INFO: Epoch 9/30
+2020-01-02 17:45:21,243:INFO: - Train metrics: loss: 0.136 ; accuracy: 0.762
+2020-01-02 17:45:21,729:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.771
+2020-01-02 17:45:21,735:INFO: Epoch 10/30
+2020-01-02 17:45:25,543:INFO: - Train metrics: loss: 0.139 ; accuracy: 0.740
+2020-01-02 17:45:26,060:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.775
+2020-01-02 17:45:26,065:INFO: Epoch 11/30
+2020-01-02 17:45:29,887:INFO: - Train metrics: loss: 0.137 ; accuracy: 0.756
+2020-01-02 17:45:30,412:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.793
+2020-01-02 17:45:30,423:INFO: - Found new best accuracy
+2020-01-02 17:45:30,423:INFO: Epoch 12/30
+2020-01-02 17:45:34,215:INFO: - Train metrics: loss: 0.134 ; accuracy: 0.803
+2020-01-02 17:45:34,703:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.799
+2020-01-02 17:45:34,713:INFO: - Found new best accuracy
+2020-01-02 17:45:34,714:INFO: Epoch 13/30
+2020-01-02 17:45:38,529:INFO: - Train metrics: loss: 0.131 ; accuracy: 0.789
+2020-01-02 17:45:39,022:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.790
+2020-01-02 17:45:39,027:INFO: Epoch 14/30
+2020-01-02 17:45:42,836:INFO: - Train metrics: loss: 0.132 ; accuracy: 0.781
+2020-01-02 17:45:43,305:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.805
+2020-01-02 17:45:43,316:INFO: - Found new best accuracy
+2020-01-02 17:45:43,316:INFO: Epoch 15/30
+2020-01-02 17:45:47,149:INFO: - Train metrics: loss: 0.137 ; accuracy: 0.777
+2020-01-02 17:45:47,622:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.803
+2020-01-02 17:45:47,628:INFO: Epoch 16/30
+2020-01-02 17:45:51,470:INFO: - Train metrics: loss: 0.134 ; accuracy: 0.779
+2020-01-02 17:45:51,978:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.809
+2020-01-02 17:45:51,988:INFO: - Found new best accuracy
+2020-01-02 17:45:51,989:INFO: Epoch 17/30
+2020-01-02 17:45:55,825:INFO: - Train metrics: loss: 0.129 ; accuracy: 0.812
+2020-01-02 17:45:56,306:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.817
+2020-01-02 17:45:56,316:INFO: - Found new best accuracy
+2020-01-02 17:45:56,317:INFO: Epoch 18/30
+2020-01-02 17:46:00,383:INFO: - Train metrics: loss: 0.130 ; accuracy: 0.801
+2020-01-02 17:46:00,935:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.810
+2020-01-02 17:46:00,941:INFO: Epoch 19/30
+2020-01-02 17:46:04,939:INFO: - Train metrics: loss: 0.133 ; accuracy: 0.785
+2020-01-02 17:46:05,437:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.820
+2020-01-02 17:46:05,448:INFO: - Found new best accuracy
+2020-01-02 17:46:05,448:INFO: Epoch 20/30
+2020-01-02 17:46:09,326:INFO: - Train metrics: loss: 0.131 ; accuracy: 0.803
+2020-01-02 17:46:09,831:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.820
+2020-01-02 17:46:09,837:INFO: Epoch 21/30
+2020-01-02 17:46:13,701:INFO: - Train metrics: loss: 0.126 ; accuracy: 0.822
+2020-01-02 17:46:14,215:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.815
+2020-01-02 17:46:14,220:INFO: Epoch 22/30
+2020-01-02 17:46:18,080:INFO: - Train metrics: loss: 0.127 ; accuracy: 0.814
+2020-01-02 17:46:18,591:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.817
+2020-01-02 17:46:18,596:INFO: Epoch 23/30
+2020-01-02 17:46:22,404:INFO: - Train metrics: loss: 0.127 ; accuracy: 0.822
+2020-01-02 17:46:22,917:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.825
+2020-01-02 17:46:22,928:INFO: - Found new best accuracy
+2020-01-02 17:46:22,929:INFO: Epoch 24/30
+2020-01-02 17:46:26,728:INFO: - Train metrics: loss: 0.126 ; accuracy: 0.814
+2020-01-02 17:46:27,260:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.821
+2020-01-02 17:46:27,266:INFO: Epoch 25/30
+2020-01-02 17:46:31,085:INFO: - Train metrics: loss: 0.120 ; accuracy: 0.869
+2020-01-02 17:46:31,584:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.822
+2020-01-02 17:46:31,589:INFO: Epoch 26/30
+2020-01-02 17:46:35,485:INFO: - Train metrics: loss: 0.128 ; accuracy: 0.809
+2020-01-02 17:46:36,018:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.826
+2020-01-02 17:46:36,028:INFO: - Found new best accuracy
+2020-01-02 17:46:36,029:INFO: Epoch 27/30
+2020-01-02 17:46:39,831:INFO: - Train metrics: loss: 0.122 ; accuracy: 0.855
+2020-01-02 17:46:40,351:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.831
+2020-01-02 17:46:40,361:INFO: - Found new best accuracy
+2020-01-02 17:46:40,362:INFO: Epoch 28/30
+2020-01-02 17:46:44,230:INFO: - Train metrics: loss: 0.127 ; accuracy: 0.818
+2020-01-02 17:46:44,722:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.828
+2020-01-02 17:46:44,727:INFO: Epoch 29/30
+2020-01-02 17:46:48,526:INFO: - Train metrics: loss: 0.125 ; accuracy: 0.826
+2020-01-02 17:46:49,015:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.833
+2020-01-02 17:46:49,026:INFO: - Found new best accuracy
+2020-01-02 17:46:49,026:INFO: Epoch 30/30
+2020-01-02 17:46:52,876:INFO: - Train metrics: loss: 0.125 ; accuracy: 0.834
+2020-01-02 17:46:53,373:INFO: - Eval metrics : loss: 0.000 ; accuracy: 0.831
+2020-01-02 17:52:24,320:INFO: Loading the datasets...
+2020-01-02 17:52:26,349:INFO: - done.
+2020-01-02 17:52:28,791:INFO: Experiment - model version: cnn_distill
+2020-01-02 17:52:28,791:INFO: Starting training for 30 epoch(s)
+2020-01-02 17:52:28,791:INFO: First, loading the teacher model and computing its outputs...
+2020-01-02 17:52:42,905:INFO: - Finished computing teacher outputs after 15 secs..
+2020-01-02 17:52:42,905:INFO: Epoch 1/30
+2020-01-02 17:52:46,801:INFO: - Train metrics: accuracy: 0.406 ; loss: 0.199
+2020-01-02 17:52:47,325:INFO: - Eval metrics : accuracy: 0.618 ; loss: 0.000
+2020-01-02 17:52:47,336:INFO: - Found new best accuracy
+2020-01-02 17:52:47,336:INFO: Epoch 2/30
+2020-01-02 17:52:51,350:INFO: - Train metrics: accuracy: 0.605 ; loss: 0.165
+2020-01-02 17:52:51,852:INFO: - Eval metrics : accuracy: 0.692 ; loss: 0.000
+2020-01-02 17:52:51,862:INFO: - Found new best accuracy
+2020-01-02 17:52:51,862:INFO: Epoch 3/30
+2020-01-02 17:52:55,748:INFO: - Train metrics: accuracy: 0.641 ; loss: 0.158
+2020-01-02 17:52:56,249:INFO: - Eval metrics : accuracy: 0.701 ; loss: 0.000
+2020-01-02 17:52:56,260:INFO: - Found new best accuracy
+2020-01-02 17:52:56,260:INFO: Epoch 4/30
+2020-01-02 17:53:00,089:INFO: - Train metrics: accuracy: 0.654 ; loss: 0.154
+2020-01-02 17:53:00,595:INFO: - Eval metrics : accuracy: 0.750 ; loss: 0.000
+2020-01-02 17:53:00,606:INFO: - Found new best accuracy
+2020-01-02 17:53:00,606:INFO: Epoch 5/30
+2020-01-02 17:53:04,423:INFO: - Train metrics: accuracy: 0.686 ; loss: 0.147
+2020-01-02 17:53:04,929:INFO: - Eval metrics : accuracy: 0.750 ; loss: 0.000
+2020-01-02 17:53:04,939:INFO: - Found new best accuracy
+2020-01-02 17:53:04,940:INFO: Epoch 6/30
+2020-01-02 17:53:08,954:INFO: - Train metrics: accuracy: 0.734 ; loss: 0.143
+2020-01-02 17:53:09,488:INFO: - Eval metrics : accuracy: 0.764 ; loss: 0.000
+2020-01-02 17:53:09,498:INFO: - Found new best accuracy
+2020-01-02 17:53:09,499:INFO: Epoch 7/30
+2020-01-02 17:53:13,397:INFO: - Train metrics: accuracy: 0.742 ; loss: 0.141
+2020-01-02 17:53:13,961:INFO: - Eval metrics : accuracy: 0.774 ; loss: 0.000
+2020-01-02 17:53:13,972:INFO: - Found new best accuracy
+2020-01-02 17:53:13,972:INFO: Epoch 8/30
+2020-01-02 17:53:17,818:INFO: - Train metrics: accuracy: 0.727 ; loss: 0.145
+2020-01-02 17:53:18,308:INFO: - Eval metrics : accuracy: 0.776 ; loss: 0.000
+2020-01-02 17:53:18,319:INFO: - Found new best accuracy
+2020-01-02 17:53:18,319:INFO: Epoch 9/30
+2020-01-02 17:53:22,253:INFO: - Train metrics: accuracy: 0.748 ; loss: 0.137
+2020-01-02 17:53:22,780:INFO: - Eval metrics : accuracy: 0.772 ; loss: 0.000
+2020-01-02 17:53:22,785:INFO: Epoch 10/30
+2020-01-02 17:53:26,607:INFO: - Train metrics: accuracy: 0.766 ; loss: 0.138
+2020-01-02 17:53:27,126:INFO: - Eval metrics : accuracy: 0.761 ; loss: 0.000
+2020-01-02 17:53:27,132:INFO: Epoch 11/30
+2020-01-02 17:53:30,998:INFO: - Train metrics: accuracy: 0.744 ; loss: 0.138
+2020-01-02 17:53:31,475:INFO: - Eval metrics : accuracy: 0.792 ; loss: 0.000
+2020-01-02 17:53:31,485:INFO: - Found new best accuracy
+2020-01-02 17:53:31,486:INFO: Epoch 12/30
+2020-01-02 17:53:35,319:INFO: - Train metrics: accuracy: 0.799 ; loss: 0.134
+2020-01-02 17:53:35,820:INFO: - Eval metrics : accuracy: 0.795 ; loss: 0.000
+2020-01-02 17:53:35,830:INFO: - Found new best accuracy
+2020-01-02 17:53:35,830:INFO: Epoch 13/30
+2020-01-02 17:53:39,662:INFO: - Train metrics: accuracy: 0.793 ; loss: 0.132
+2020-01-02 17:53:40,176:INFO: - Eval metrics : accuracy: 0.804 ; loss: 0.000
+2020-01-02 17:53:40,187:INFO: - Found new best accuracy
+2020-01-02 17:53:40,188:INFO: Epoch 14/30
+2020-01-02 17:53:44,014:INFO: - Train metrics: accuracy: 0.771 ; loss: 0.133
+2020-01-02 17:53:44,492:INFO: - Eval metrics : accuracy: 0.804 ; loss: 0.000
+2020-01-02 17:53:44,503:INFO: - Found new best accuracy
+2020-01-02 17:53:44,504:INFO: Epoch 15/30
+2020-01-02 17:53:48,319:INFO: - Train metrics: accuracy: 0.793 ; loss: 0.136
+2020-01-02 17:53:48,850:INFO: - Eval metrics : accuracy: 0.799 ; loss: 0.000
+2020-01-02 17:53:48,855:INFO: Epoch 16/30
+2020-01-02 17:53:52,788:INFO: - Train metrics: accuracy: 0.768 ; loss: 0.134
+2020-01-02 17:53:53,291:INFO: - Eval metrics : accuracy: 0.806 ; loss: 0.000
+2020-01-02 17:53:53,301:INFO: - Found new best accuracy
+2020-01-02 17:53:53,302:INFO: Epoch 17/30
+2020-01-02 17:53:57,183:INFO: - Train metrics: accuracy: 0.816 ; loss: 0.129
+2020-01-02 17:53:57,673:INFO: - Eval metrics : accuracy: 0.812 ; loss: 0.000
+2020-01-02 17:53:57,684:INFO: - Found new best accuracy
+2020-01-02 17:53:57,684:INFO: Epoch 18/30
+2020-01-02 17:54:01,534:INFO: - Train metrics: accuracy: 0.811 ; loss: 0.130
+2020-01-02 17:54:02,069:INFO: - Eval metrics : accuracy: 0.813 ; loss: 0.000
+2020-01-02 17:54:02,080:INFO: - Found new best accuracy
+2020-01-02 17:54:02,080:INFO: Epoch 19/30
+2020-01-02 17:54:05,989:INFO: - Train metrics: accuracy: 0.783 ; loss: 0.134
+2020-01-02 17:54:06,491:INFO: - Eval metrics : accuracy: 0.814 ; loss: 0.000
+2020-01-02 17:54:06,502:INFO: - Found new best accuracy
+2020-01-02 17:54:06,502:INFO: Epoch 20/30
+2020-01-02 17:54:10,307:INFO: - Train metrics: accuracy: 0.809 ; loss: 0.131
+2020-01-02 17:54:10,819:INFO: - Eval metrics : accuracy: 0.826 ; loss: 0.000
+2020-01-02 17:54:10,829:INFO: - Found new best accuracy
+2020-01-02 17:54:10,830:INFO: Epoch 21/30
+2020-01-02 17:54:14,682:INFO: - Train metrics: accuracy: 0.816 ; loss: 0.125
+2020-01-02 17:54:15,160:INFO: - Eval metrics : accuracy: 0.822 ; loss: 0.000
+2020-01-02 17:54:15,165:INFO: Epoch 22/30
+2020-01-02 17:54:18,979:INFO: - Train metrics: accuracy: 0.822 ; loss: 0.128
+2020-01-02 17:54:19,495:INFO: - Eval metrics : accuracy: 0.817 ; loss: 0.000
+2020-01-02 17:54:19,501:INFO: Epoch 23/30
+2020-01-02 17:54:23,377:INFO: - Train metrics: accuracy: 0.828 ; loss: 0.126
+2020-01-02 17:54:23,865:INFO: - Eval metrics : accuracy: 0.828 ; loss: 0.000
+2020-01-02 17:54:23,875:INFO: - Found new best accuracy
+2020-01-02 17:54:23,876:INFO: Epoch 24/30
+2020-01-02 17:54:27,691:INFO: - Train metrics: accuracy: 0.787 ; loss: 0.130
+2020-01-02 17:54:28,185:INFO: - Eval metrics : accuracy: 0.829 ; loss: 0.000
+2020-01-02 17:54:28,195:INFO: - Found new best accuracy
+2020-01-02 17:54:28,196:INFO: Epoch 25/30
+2020-01-02 17:54:31,998:INFO: - Train metrics: accuracy: 0.873 ; loss: 0.122
+2020-01-02 17:54:32,514:INFO: - Eval metrics : accuracy: 0.824 ; loss: 0.000
+2020-01-02 17:54:32,519:INFO: Epoch 26/30
+2020-01-02 17:54:36,313:INFO: - Train metrics: accuracy: 0.828 ; loss: 0.127
+2020-01-02 17:54:36,802:INFO: - Eval metrics : accuracy: 0.833 ; loss: 0.000
+2020-01-02 17:54:36,812:INFO: - Found new best accuracy
+2020-01-02 17:54:36,813:INFO: Epoch 27/30
+2020-01-02 17:54:40,608:INFO: - Train metrics: accuracy: 0.842 ; loss: 0.122
+2020-01-02 17:54:41,089:INFO: - Eval metrics : accuracy: 0.830 ; loss: 0.000
+2020-01-02 17:54:41,094:INFO: Epoch 28/30
+2020-01-02 17:54:44,900:INFO: - Train metrics: accuracy: 0.822 ; loss: 0.127
+2020-01-02 17:54:45,399:INFO: - Eval metrics : accuracy: 0.823 ; loss: 0.000
+2020-01-02 17:54:45,404:INFO: Epoch 29/30
+2020-01-02 17:54:49,204:INFO: - Train metrics: accuracy: 0.814 ; loss: 0.125
+2020-01-02 17:54:49,704:INFO: - Eval metrics : accuracy: 0.831 ; loss: 0.000
+2020-01-02 17:54:49,710:INFO: Epoch 30/30
+2020-01-02 17:54:53,504:INFO: - Train metrics: accuracy: 0.850 ; loss: 0.123
+2020-01-02 17:54:54,008:INFO: - Eval metrics : accuracy: 0.828 ; loss: 0.000
