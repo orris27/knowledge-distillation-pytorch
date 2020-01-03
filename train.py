@@ -15,18 +15,10 @@ from tqdm import tqdm
 
 import utils
 import model.net as net
-import model.data_loader as data_loader
+from datasets import fetch_dataloader
 import model.resnet as resnet
-import model.wrn as wrn
-import model.densenet as densenet
-import model.resnext as resnext
-import model.preresnet as preresnet
 #from evaluate import evaluate, evaluate_kd
 
-parser = argparse.ArgumentParser()
-# parser.add_argument('--data_dir', default='data/64x64_SIGNS', help="Directory for the dataset")
-parser.add_argument('--model_dir', default='experiments/base_model',
-                    help="Directory containing params.json")
 
 def loss_fn_kd(logits, labels, teacher_logits, params):
     """
@@ -190,14 +182,12 @@ def evaluate_kd(model, dataloader, params):
 
 
 
-def train_and_evaluate_kd(model, teacher_model, train_dataloader, val_dataloader, optimizer,
-                       params, model_dir):
+def train_and_evaluate_kd(model, teacher_model, train_dataloader, val_dataloader, optimizer, params):
     """Train the model and evaluate every epoch.
 
     Args:
         model: (torch.nn.Module) the neural network
         params: (Params) hyperparameters
-        model_dir: (string) directory containing config, weights and log
     """
     best_val_acc = 0.0
     
@@ -226,14 +216,8 @@ def train_and_evaluate_kd(model, teacher_model, train_dataloader, val_dataloader
 
 
 if __name__ == '__main__':
-
-    # Load the parameters from json file
-    args = parser.parse_args()
-
-    #params = utils.Params(json_path)
     params = {
         "model_version": "cnn_distill",
-        "subset_percent": 1.0,
         "augmentation": "yes",
         "teacher": "resnet18",
         "alpha": 0.9,
@@ -263,12 +247,9 @@ if __name__ == '__main__':
     print("Loading the datasets...")
 
     # fetch dataloaders, considering full-set vs. sub-set scenarios
-    if params.subset_percent < 1.0:
-        train_dl = data_loader.fetch_subset_dataloader('train', params)
-    else:
-        train_dl = data_loader.fetch_dataloader('train', params)
+    train_dl = fetch_dataloader('train', params)
     
-    dev_dl = data_loader.fetch_dataloader('dev', params)
+    dev_dl = fetch_dataloader('dev', params)
 
     print("- done.")
 
@@ -288,4 +269,4 @@ if __name__ == '__main__':
     print("Experiment - model version: {}".format(params.model_version))
     print("Starting training for {} epoch(s)".format(params.num_epochs))
     print("First, loading the teacher model and computing its outputs...")
-    train_and_evaluate_kd(model, teacher_model, train_dl, dev_dl, optimizer, params, args.model_dir)
+    train_and_evaluate_kd(model, teacher_model, train_dl, dev_dl, optimizer, params)
