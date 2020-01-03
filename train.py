@@ -14,10 +14,35 @@ from torch.autograd import Variable
 from tqdm import tqdm
 
 import utils
-import model.net as net
+#import model.net as net
+from model import CNN, ResNet18
 from datasets import fetch_dataloader
-import model.resnet as resnet
-#from evaluate import evaluate, evaluate_kd
+#import model.resnet as resnet
+
+def load_checkpoint(checkpoint, model, optimizer=None):
+    """Loads model parameters (state_dict) from file_path. If optimizer is provided, loads state_dict of
+    optimizer assuming it is present in checkpoint.
+
+    Args:
+        checkpoint: (string) filename which needs to be loaded
+        model: (torch.nn.Module) model for which the parameters are loaded
+        optimizer: (torch.optim) optional: resume optimizer from checkpoint
+    """
+    if not os.path.exists(checkpoint):
+        raise("File doesn't exist {}".format(checkpoint))
+    if torch.cuda.is_available():
+        checkpoint = torch.load(checkpoint)
+    else:
+        # this helps avoid errors when loading single-GPU-trained weights onto CPU-model
+        checkpoint = torch.load(checkpoint, map_location=lambda storage, loc: storage)
+
+    model.load_state_dict(checkpoint['state_dict'])
+
+    if optimizer:
+        optimizer.load_state_dict(checkpoint['optim_dict'])
+
+    return checkpoint
+
 
 
 def loss_fn_kd(logits, labels, teacher_logits, params):
@@ -254,11 +279,11 @@ if __name__ == '__main__':
     print("- done.")
 
     # train a 5-layer CNN or a 18-layer ResNet with knowledge distillation
-    model = net.Net(params).cuda() if params.cuda else net.Net(params)
+    model = CNN(params).cuda() if params.cuda else CNN(params)
     optimizer = optim.Adam(model.parameters(), lr=params.learning_rate)
     # fetch loss function and metrics definition in model files
 
-    teacher_model = resnet.ResNet18()
+    teacher_model = ResNet18()
     teacher_checkpoint = 'experiments/base_resnet18/best.pth.tar'
     teacher_model = teacher_model.cuda() if params.cuda else teacher_model
 
